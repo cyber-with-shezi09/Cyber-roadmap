@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Free Cybersecurity Foundations: Networking, Linux, Programming</title>
+<style>
+:root{--bg:#0c1117;--panel:#141b24;--line:#223041;--text:#e6edf3;--mute:#8b9bb0;--net:#4cc9f0;--lin:#f4c542;--prog:#b78cff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:28px 18px 48px}
+h1{font:700 1.9rem/1.15 ui-monospace,"SF Mono",Menlo,Consolas,monospace;margin:0 0 12px;letter-spacing:-.02em}
+.lead{color:var(--mute);margin:0 0 22px}
+.rule{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 30px;font-size:.95rem}
+.rule b{color:var(--text)}
+nav{display:flex;gap:8px;margin:0 0 28px;flex-wrap:wrap}
+nav a{flex:1 1 0;text-align:center;padding:10px 6px;border:1px solid var(--line);border-radius:8px;color:var(--text);text-decoration:none;font-weight:600;font-size:.9rem}
+section{margin:0 0 36px;--c:var(--net)}
+section.lin{--c:var(--lin)}section.prog{--c:var(--prog)}
+h2{margin:0 0 4px;font-size:1.35rem;color:var(--c)}
+.why{color:var(--mute);margin:0 0 14px;font-size:.93rem}
+a.card{display:block;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;padding:14px 16px;margin:0 0 10px;color:inherit;text-decoration:none}
+a.card:active{background:#1a2330}
+.t{font-weight:650;display:block}
+.m{display:block;color:var(--mute);font-size:.88rem;margin-top:3px}
+.tag{display:inline-block;margin-top:8px;font-size:.78rem;color:var(--c);border:1px solid var(--c);border-radius:99px;padding:1px 9px}
+a:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+.order{padding-left:20px;margin:0 0 30px;color:var(--mute)}
+.order li{margin:4px 0}.order b{color:var(--text)}
+footer{color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+<h1>Learn cybersecurity the right way</h1>
+<p class="lead">Free courses for the three fundamentals every security professional needs. Skip them and you stay a tool runner.</p>
+
+<div class="rule"><b>Why this matters:</b> running random tools on Kali doesn't make you a pro. Understand networks, Linux and code, and you can build your own tools and know what's happening behind the scenes.</div>
+
+<nav><a href="#net">Networking</a><a href="#lin">Linux</a><a href="#prog">Programming</a></nav>
+
+<ol class="order">
+<li><b>Start with Linux</b> and Python together, a little each day.</li>
+<li><b>Add Networking</b> once you can use the terminal comfortably.</li>
+<li><b>Practice</b> on the labs at the bottom. Build small tools as you go.</li>
+</ol>
+
+<section id="net">
+<h2>Networking</h2>
+<p class="why">TCP/IP, DNS, HTTP, ports, firewalls. This is what you will be attacking and defending.</p>
+<a class="card" href="https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/" target="_blank" rel="noopener"><span class="t">Professor Messer: Network+ course</span><span class="m">Full video course covering the whole networking foundation.</span><span class="tag">Free videos</span></a>
+<a class="card" href="https://www.netacad.com/courses/networking-basics" target="_blank" rel="noopener"><span class="t">Cisco Networking Academy: Networking Basics</span><span class="m">Beginner course with hands-on labs. Free account needed.</span><span class="tag">Free</span></a>
+<a class="card" href="https://www.youtube.com/results?search_query=freecodecamp+computer+networking+full+course" target="_blank" rel="noopener"><span class="t">freeCodeCamp: Computer Networking full course</span><span class="m">Long-form YouTube course, good for watching at your own pace.</span><span class="tag">Free on YouTube</span></a>
+</section>
+
+<section id="lin" class="lin">
+<h2>Linux</h2>
+<p class="why">The terminal is your main workspace. Get fast with commands, files, permissions and processes.</p>
+<a class="card" href="https://linuxjourney.com" target="_blank" rel="noopener"><span class="t">Linux Journey</span><span class="m">Clear lessons from absolute beginner to advanced topics.</span><span class="tag">Free</span></a>
+<a class="card" href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener"><span class="t">OverTheWire: Bandit</span><span class="m">Learn the command line by solving levels over SSH. A game, not a lecture.</span><span class="tag">Free game</span></a>
+<a class="card" href="https://linuxcommand.org/tlcl.php" target="_blank" rel="noopener"><span class="t">The Linux Command Line (book)</span><span class="m">Full book by William Shotts, including shell scripting.</span><span class="tag">Free PDF</span></a>
+</section>
+
+<section id="prog" class="prog">
+<h2>Programming</h2>
+<p class="why">Python for automation and tools, C to understand how memory and exploits work.</p>
+<a class="card" href="https://cs50.harvard.edu/python/" target="_blank" rel="noopener"><span class="t">Harvard CS50P: Python</span><span class="m">Best structured Python course for beginners, with problem sets.</span><span class="tag">Free</span></a>
+<a class="card" href="https://automatetheboringstuff.com" target="_blank" rel="noopener"><span class="t">Automate the Boring Stuff with Python</span><span class="m">Practical scripting. Great for building your first small tools.</span><span class="tag">Free online book</span></a>
+<a class="card" href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener"><span class="t">Harvard CS50x: Intro to Computer Science</span><span class="m">Covers C, memory and how computers really work.</span><span class="tag">Free</span></a>
+</section>
+
+<section id="lab">
+<h2>Practice labs</h2>
+<p class="why">Apply what you learn in safe, legal environments.</p>
+<a class="card" href="https://tryhackme.com/path/outline/presecurity" target="_blank" rel="noopener"><span class="t">TryHackMe: Pre Security path</span><span class="m">Guided rooms on networking, Linux and web basics.</span><span class="tag">Free rooms available</span></a>
+<a class="card" href="https://picoctf.org" target="_blank" rel="noopener"><span class="t">picoCTF</span><span class="m">Beginner-friendly capture-the-flag challenges.</span><span class="tag">Free</span></a>
+</section>
+
+<footer>Some platforms offer paid upgrades, but everything linked here has a free option. Only practice on systems you own or have permission to test. Follow me for more.</footer>
+</main>
+</body>
+</html>
